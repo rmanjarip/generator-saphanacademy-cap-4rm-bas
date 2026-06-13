@@ -1,0 +1,120 @@
+{
+  "_version": "3.0.0",
+  "identification": {
+    "title": "generator-saphanacademy-cap",
+    "id": "generator-saphanacademy-cap-flp",
+    "entityType": "bundle"
+  },
+  "payload": {
+    "catalogs": [
+      {
+        "_version": "3.0.0",
+        "identification": {
+          "id": "generator-saphanacademy-cap-catalog",
+          "title": "{{title}}",
+          "entityType": "catalog",
+          "i18n": "i18n/catalog.properties"
+        },
+        "payload": {
+          "viz": [
+            {
+              "appId": "generator-saphanacademy-cap.admin-authors",
+              "vizId": "Authors-manage"
+            },
+            {
+              "appId": "generator-saphanacademy-cap.admin-books",
+              "vizId": "Books-manage"
+            },
+            {
+              "appId": "generator-saphanacademy-cap.browse",
+              "vizId": "Books-display"
+            },
+            {
+              "appId": "generator-saphanacademy-cap.genres",
+              "vizId": "Genres-display"
+            }
+          ]
+        }
+      }
+    ],
+    "groups": [
+      {
+        "_version": "3.0.0",
+        "identification": {
+          "id": "generator-saphanacademy-cap-group",
+          "title": "{{title}}",
+          "entityType": "group",
+          "i18n": "i18n/group.properties"
+        },
+        "payload": {
+          "viz": [
+            {
+              "id": "generator-saphanacademy-capadmin-authors-001",
+              "appId": "generator-saphanacademy-cap.admin-authors",
+              "vizId": "Authors-manage"
+            },
+            {
+              "id": "generator-saphanacademy-capadmin-books-001",
+              "appId": "generator-saphanacademy-cap.admin-books",
+              "vizId": "Books-manage"
+            },
+            {
+              "id": "generator-saphanacademy-capbrowse-001",
+              "appId": "generator-saphanacademy-cap.browse",
+              "vizId": "Books-display"
+            },
+            {
+              "id": "generator-saphanacademy-capgenres-001",
+              "appId": "generator-saphanacademy-cap.genres",
+              "vizId": "Genres-display"
+            }
+          ]
+        }
+      }
+    ],
+    "sites": [
+      {
+        "_version": "3.0.0",
+        "identification": {
+          "id": "generator-saphanacademy-cap-site",
+          "entityType": "site",
+          "title": "generator-saphanacademy-cap",
+          "description": "A simple CAP project."
+        },
+        "payload": {
+          "config": {
+            "ushellConfig": {
+              "renderers": {
+                "fiori2": {
+                  "componentData": {
+                    "config": {
+                      "applications": {
+                        "Shell-home": {}
+                      },
+                      "enableSearch": true,
+                      "enablePersonalization": true,
+                      "enableSetTheme": true,
+                      "enableSetLanguage": true
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "groupsOrder": ["generator-saphanacademy-cap-group"],
+          "sap.cloud.portal": {
+            "config": {
+              "theme.id": "sap_horizon",
+              "theme.active": [
+                "sap_horizon",
+                "sap_horizon_dark",
+                "sap_horizon_hcw",
+                "sap_horizon_hcb"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}
